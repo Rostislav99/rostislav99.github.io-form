@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <form action="#" id="form" class="form_body">
+                <h1 class="form_title">Отправка данных на почту</h1>
+
+                <div class="form_item">
+                    <label for="formName" class="form_label">
+                        Имя*:
+                    </label>
+                    <input id="formName" class="form_input" type="text" name="name">
+                </div>
+
+                <div class="form_item">
+                    <label for="formEmail" class="form_label"> E-mail*:</label>
+                    <input id="formEmail" class="form_input" type="text" name="Email">
+                </div>
+
+                <div class="form_item">
+
+                    <div class="form_label">
+                        Левша или правша?
+                    </div>
+
+                    <div class="options">
+
+                        <div class="options_item">
+                            <input id="formRightHanded" checked class="options_input" type="radio" value="right"
+                                name="hand">
+                            <label for="formRightHanded" class="options_label"><span>Правша</span></label>
+                        </div>
+
+                        <div class="options_item">
+                            <input id="formLeftHanded" class="options_input" type="radio" value="left" name="hand">
+                            <label for="formLeftHanded" class="options_label"><span>Левша</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form_item">
+                    <label for="formMessage" class="form_label">Сообщение:</label>
+                    <textarea id="formMessage" class="form_input" name="message"></textarea>
+                </div>
+
+                <div class="form_item">
+                    <div class="form_label">Возраст:</div>
+                    <select id="" class="select" name="age">
+                        <option value="от 18 до 25" selected>Молодой</option>
+                        <option value="от 25 до 45">Старый</option>
+                        <option value="от 45">Супер стар</option>
+                    </select>
+                </div>
+
+                <div class="form_item">
+
+                    <div class="form_label">Прикрепить фото</div>
+
+                    <div class="file">
+
+                        <div class="file_item">
+                            <input accept=".jpg, .png, .gif" id="formImage" class="file_input" type="file" name="image">
+                            <div class="file_button">Выбрать</div>
+                        </div>
+
+                        <div class="file_preview">
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form_item">
+                    <div class="checkbox">
+                        <input id="formAgreement" class="checkbox_input" checked type="checkbox" name="agreement">
+                        <label for="formAgreement" class="checkbox_label"><span>Я даю свое согласие на обработку
+                                персональных даных в соответствии с Условиями</span></label>
+                    </div>
+                </div>
+                <button class="form_button" type="submit">Отправить</button>
+
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
